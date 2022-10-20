@@ -12,16 +12,16 @@
     <nav>
         <ul>
           <li>
-            <a href="">Formazione</a>
+            <a href="#formazione">Formazione</a>
           </li>
           <li>
-            <a href="">Esperienze</a>
+            <a href="#esperienze">Esperienze</a>
           </li>
           <li>
-            <a href="">Competenze</a>
+            <a href="#competenze">Competenze</a>
           </li>
           <li>
-            <a href="">Hobby</a>
+            <a href="#hobby">Hobby</a>
           </li>
         </ul>
     </nav>
@@ -32,6 +32,11 @@
             <img class="photo" src="./assets/IMG_7334.jpg" width="200px" alt="logo" />
         </div>
         <div class="info">
+            <div>
+                <img class="icon" src="./assets/mail_FILL0_wght400_GRAD0_opsz48.svg" alt="address"> 
+                <p>jessicavitanza28@gmail.com</p>
+           </div>
+
             <div>
                 <img class="icon" src="./assets/call_FILL0_wght400_GRAD0_opsz48.svg" alt="telephone"> 
                  <p>+39 340 48 98 158</p>
@@ -56,11 +61,28 @@
                 <img class="icon" src="./assets/directions_car_FILL0_wght400_GRAD0_opsz48.svg" alt="">
             <p> B</p>
             </div>
+            
+            <a class="info-contatti" href="#contact">Contatti</a>
         </div>
     </header>
 
     <main>
-          <section class="formazione">
+
+      <div class="gallery">
+          <img src="./assets/Schermata 2022-10-20 alle 15.44.05.png" alt="">
+          <img src="./assets/Schermata 2022-10-20 alle 16.21.36.png" alt="">
+          <img src="./assets/Schermata 2022-10-20 alle 15.44.49.png" alt="">
+          <img src="./assets/Schermata 2022-10-20 alle 16.23.12.png" alt=""> 
+          <img src="./assets/Schermata 2022-10-20 alle 15.48.28.png" alt="">
+          <img src="./assets/Schermata 2022-10-20 alle 16.22.16.png" alt="">
+          <img src="./assets/Schermata 2022-10-20 alle 16.24.47.png" alt="">
+          <img src="./assets/Schermata 2022-10-20 alle 15.47.46.png" alt="">
+          <img src="./assets/Schermata 2022-10-20 alle 15.49.09.png" alt="">
+          <img src="./assets/Schermata 2022-10-20 alle 15.47.07.png" alt=""> 
+      </div>
+
+
+          <section class="formazione" id="formazione">
             <h3>Formazione</h3>
               <div>
                 <img src="./assets/Mobile development-amico.svg" alt="">
@@ -76,7 +98,7 @@
             
           </section>
 
-          <section class="esperienze">
+          <section class="esperienze" id="esperienze">
             <h3>Esperienze Lavorative</h3>
               <div>
                 <img src="./assets/Personal Trainer-amico.svg" alt="">
@@ -91,11 +113,9 @@
                     <li>VFP1 - Esercito Italiano</li>
                 </ul>
               </div>
-            
-            
           </section>
 
-          <section class="competenze">
+          <section class="competenze" id="competenze">
             <h3>Competenze</h3>
               <div>
                 <img src="./assets/Pull request-amico.svg" alt="">
@@ -125,7 +145,7 @@
             </ul>
           </section>
 
-          <section class="hobby">
+          <section class="hobby" id="hobby">
             <h3>Hobby</h3>
               <div>
                 <img src="./assets/Gardening-amico.svg" alt="">
@@ -140,6 +160,64 @@
                 </ul>
               </div>
           </section>
+
+          <form id="contact">
+
+            <img class="img-gif" src="./assets/Emails.gif" alt="">
+            
+            <div class="box-input">
+              <h3>Contact</h3>
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                class="input-desk"
+                placeholder="es: Mario"
+                required
+              />
+              <label for="cognome">Cognome</label>
+              <input
+                type="text"
+                name="cognome"
+                id="cognome"
+                class="input-desk"
+                placeholder="es: Rossi"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input-desk"
+                placeholder="es: mariorossi@gmail.com"
+                required
+              />
+              <label for="tel">Telefono</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="input-desk"
+                placeholder="es: 3458362421"
+                required
+              />
+              
+              <label for="message">Il tuo messaggio</label>
+              <textarea
+                name="message"
+                id="message"
+                class="input-desk"
+                cols="30"
+                rows="10"
+                placeholder="Scrivi qui il tuo messaggio.."
+                required
+              ></textarea>
+              <input class="invia" type="submit" value="Invia" />
+            </div>
+            
+          </form>
     </main>
 
     <footer>
