@@ -5,12 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
     <title>Curriculum</title>
 </head>
 <body>
 
     <nav>
-        <ul>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#formazione">FORMAZIONE</a></li>
+          <li><a class="menu__item" href="#esperienze">ESPERIENZE LAVORATIVE</a></li>
+          <li><a class="menu__item" href="#competenze">COMPETENZE</a></li>
+          <li><a class="menu__item" href="#hobby">HOBBY</a></li>
+        </ul>
+      </div>
+
+        <ul class="menu__desk">
           <li>
             <a href="#formazione">Formazione</a>
           </li>
@@ -100,7 +117,7 @@
 
           <section class="esperienze" id="esperienze">
             <h3>Esperienze Lavorative</h3>
-              <div>
+              <div class="reverse">
                 <img src="./assets/Personal Trainer-amico.svg" alt="">
                 <ul>
                     <li>Stage : Front end developer - Dedalus</li>
@@ -115,39 +132,39 @@
               </div>
           </section>
 
-          <section class="competenze" id="competenze">
-            <h3>Competenze</h3>
-              <div>
-                <img src="./assets/Pull request-amico.svg" alt="">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>Angular</li>
-                    <li>GitHub</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Xd</li>
-                    <li>Wordpress</li>
-                    <li>Microsoft Office</li>
-                </ul>
-              </div>
-        
-          </section>
-
-          <section class="lingue">
-            <h3>Lingue</h3>
-            <ul>
-                <li>Italiano: madrelingua</li>
-                <li>Inglese: parlato</li>
-                <li>Spagnolo: elementare</li>
-            </ul>
-          </section>
+            <section class="competenze" id="competenze">
+              <h3>Competenze</h3>
+                <div>
+                  <img src="./assets/Pull request-amico.svg" alt="">
+                  <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>Bootstrap</li>
+                      <li>Angular</li>
+                      <li>GitHub</li>
+                      <li>Adobe Photoshop</li>
+                      <li>Adobe Illustrator</li>
+                      <li>Adobe Xd</li>
+                      <li>Wordpress</li>
+                      <li>Microsoft Office</li>
+                  </ul>
+                </div>
+          
+            </section>
+  
+            <section class="lingue">
+              <h3>Lingue</h3>
+              <ul>
+                  <li>Italiano: madrelingua</li>
+                  <li>Inglese: parlato</li>
+                  <li>Spagnolo: elementare</li>
+              </ul>
+            </section>
 
           <section class="hobby" id="hobby">
             <h3>Hobby</h3>
-              <div>
+              <div class="reverse">
                 <img src="./assets/Gardening-amico.svg" alt="">
                 <ul>
                     <li>Cucina vegana</li>
