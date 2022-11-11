@@ -14,6 +14,43 @@ html, body {
 
 }
 
+.intro-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-photo p {
+    margin-top: 100px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bolder;
+    padding: 0 30px;
+    font-size: 1.2rem;
+}
+
+.intro-photo img {
+    width: 110%;
+    margin-top: -50px;
+}
+
+#introduzione {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+}
+
+#introduzione h2 {
+    text-shadow: 2px 2px 4px rgb(220, 215, 215);
+}
+
+#introduzione p {
+    margin-top: 0px;
+    line-height: 40px;
+    font-size: 1.4rem;
+    margin-bottom: -10px;
+}
 
 .hamburger-menu{
     display: block;
@@ -134,7 +171,7 @@ height: 70px;
 
 
 header {
-    margin-top: 73px;
+    margin-top: -30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -320,6 +357,13 @@ form {
     width: 100%;
   }
 
+
+  .box-input h3{
+    text-align: center;
+    margin-top: 40px;
+    line-height: 40px;
+  }
+
   .img-gif {
       border-radius: 100%;
       width: 180px;
@@ -359,6 +403,15 @@ footer h3{
 
     body {
         overflow-x: hidden;
+    }
+
+    .intro-photo p {
+        font-size: 1.4rem;
+        line-height: 40px;
+    }
+
+    .intro-photo img {
+        margin-top: -90px;
     }
 
     .hamburger-menu {
@@ -517,7 +570,22 @@ footer h3{
 }
 
 @media only screen and (min-width: 1280px) {
+    nav {
+        z-index: 10;
+        }
+
+    .intro-photo p {
+        font-size: 1.6rem;
+        line-height: 50px;
+    }
+
+    .intro-photo img {
+        width: 90%;
+        margin-top: -150px;
+    }
+    
     header {
+        margin-top: -100px;
         flex-direction: row;
     }
 
@@ -598,6 +666,7 @@ form {
     display: block;
     width: 500px;
     left: 750px;
+    z-index: -0;
 }
 }
 
